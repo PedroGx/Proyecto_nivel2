@@ -1,0 +1,292 @@
+:root {
+    --principal1: #c95d05;
+    --modal1 : linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,106,106,0.7906512946975666) 55%, rgba(111,119,121,1) 100%);
+    --secundary1: #c95d05;
+   }
+
+   *{
+    box-sizing: border-box;
+   }
+   
+   a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+   }
+
+
+body {
+    background-color: #010414;
+    margin: 0px;
+    font-family: 'Lora', serif;
+}
+h1 {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-left: 50px;
+}
+
+header {
+    padding: 20px 0 0 0;
+    background: #010414;
+    text-align: center;
+}
+
+div.contacto{
+    margin: 0px;
+    background-color: var(--principal1);
+    cursor: pointer;
+    padding-top: 2% ;
+   }
+   
+   div.contacto h3{
+    text-align: right;
+    padding-right: 1.8vw;
+    font-size: 1vw;
+    margin: 0px;
+    position: relative;
+    bottom: 1vw;
+   }
+   
+   .show_modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,106,106,0.7906512946975666) 55%, rgba(111,119,121,1) 100%);
+    padding: 10% 20% 0% 20%;
+   }
+   
+   form.order{
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    width: 40%;
+    background-color: var(--secundary1);
+    padding: 5%;
+    margin-left: 30%;
+    font-size: 1.2vw;
+    border-radius: 20px;
+   }
+   
+   .modal-title{
+    color: rgb(197, 89, 0);
+    font-size: 2vw;
+   }
+   
+   form.order button{
+    width: 20%;
+    margin-top: 5%;
+    position: relative;
+    left: 30%;
+    font-size: 1vw;
+    text-align: center;
+    cursor: pointer;
+    width: 25%;
+   }
+   
+   .mark-closed{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 3vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+   }
+   
+   .mark-closed:hover{
+    border: 1px solid black;
+   }
+   
+   .closemodal{
+    display: none;
+   }
+   
+   
+
+ul {
+    list-style: none;
+}
+
+.fondo {
+    background-image: url(../images/hamburguesa-portada.jpg);
+    height: 500px;
+}
+
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+    
+}
+.submenu:hover #carrito{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background: #17181b;
+    padding: 20px;
+}
+
+.button {
+    background-color: #fbaf32;
+    color: rgba(255, 255, 255, 0.788);
+}
+.contenido-fondo {
+    margin-top: 80px;
+    color: rgb(243, 239, 239);
+}
+.contenido-fondo form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-fondo form #buscador {
+    height: 40px;
+    margin-bottom: 0;
+}
+.contenido-fondo form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../images/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+.barra {
+    padding: 20px ;
+    background: #fbaf32;
+    background: -webkit-linear-gradient(left, #b95a00 0%,#ad5400 100% );
+}
+.barra p {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+#lista-platillos .row {
+    margin-bottom: 20px;
+}
+.agregar-carrito{
+    margin: 10px 0;
+}
+.card {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #1d2124;
+}
+@media (min-width:550px){
+    .card {
+        text-align: left;
+    }
+}
+.info-card {
+    padding: 10px 20px;
+    color: rgb(253, 253, 253);
+}
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+  .column,
+  .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; }
+  
+
+    .column,
+    .columns {
+      margin-left: 5%; }
+    .columns:first-child {
+      margin-left: 0; }
+  
+    .one.column,
+    .one.columns                    { width: 10%; }
+    .two.columns                    { width: 10%; }
+    .three.columns                  { width: 22%; }
+    .four.columns                   { width: 30%; }
+    .five.columns                   { width: 40%; }
+    .six.columns                    { width: 48%; }
+
+  .button,
+  button,
+  input[type="submit"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  
+
+  .u-full-width {
+    width: 100%;
+    box-sizing: border-box; }
+  .u-pull-right {
+    float: right; }
+ 
+  
+  .container:after,
+  .row:after,
+  .u-cf {
+    content: "";
+    display: table;
+    clear: both; }
+  
+    .icono1 {
+      background-image: url(../images/icono1.png);
+  }
+  .icono2 {
+      background-image: url(../images/icono2.png);
+  }
+  .icono3 {
+      background-image: url(../images/icono3.png);
+  }
+  .icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
